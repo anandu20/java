@@ -7,12 +7,12 @@ function  timer(){
     
     
     let date= new Date();
-
+    let seconds=date.getSeconds();
     let hours= date.getHours();
     ampm=hours<12?"AM":"PM";
 
 
-    if(hours<=18 && hours>=6){
+    if(seconds<=30 && seconds>=0){
         document.getElementById("head").style.backgroundImage='url("./img/sunset-saucer-caffeine-liquid-hot.jpg")';
         document.getElementById("head").style.backgroundSize = 'cover';
         document.getElementById("timer").style.backgroundColor='rgba(249, 252, 253, 0.389)';
