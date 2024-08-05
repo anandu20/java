@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER</title>
+</head>
+<style>
+#lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    background-color: rgb(240, 234, 176);
+    color: rgb(9, 9, 9);
+    box-shadow:  1px 1px 1px rgb(38, 37, 37);
+    width: 400px;
+    height: auto;
+    border: 1px solid rgb(20, 17, 17);
+    margin: 20px; 
+    padding: 10PX;
+    text-align: center;
+}
+.card:hover{
+    transform:scale(1.03,1.03);
+}
+
+.div1{
+    color: rgb(48, 189, 29);
+
+}
+.div2{
+    color: rgb(255, 0, 0);
+}
+.div3{
+    color: blueviolet;
+}
+
+
+</style>
+
+<body>
+    <button id="btn" onclick="fetchData()" style="text-align: center; padding: 20px; background-color: rgb(25, 0, 255); color: white; margin-left: 700px;">CLICK HERE</button>
+    <div id="lists">    
+      
+    </div>
+    <script src="./javascript/user.js"></script>
+</body>
+</html>
+
+

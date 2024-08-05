@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTOS</title>
+</head>
+<style>
+#lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    background-color: rgb(230, 228, 228);
+    color: rgb(9, 9, 9);
+    box-shadow: 1px 1px 2px rgb(8, 0, 0);
+    width: 700px;
+    height: auto;
+    border: 1px solid red;
+    margin: 20px; 
+}
+.card:hover{
+    transform:scale(1.1.1,1.1.1);
+}
+.d1 img{
+    width: 500px;
+    height: 500px;
+}
+
+
+</style>
+
+<body>
+    <button id="btn" onclick="fetchData()" style="text-align: center; padding: 20px; background-color: rgb(25, 0, 255); color: white; margin-left: 730px;">Click HERE</button>
+    <div id="lists">    
+      
+    </div>
+    <script src="./java/javascript/photo.js"></script>
+</body>
+</html>
