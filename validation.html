@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    .smsg{
+        color: green;
+    }
+    .emsg{
+        color: red;
+    }
+    .card{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        border: 1px solid black;
+        padding: 5% 2% 10%;
+        border-radius: 10%;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="card">
+        <div class="form">
+            <h2 align="center">Login</h2>
+            <table>
+                <tr>
+                    <td><label for="name">Username</label></td>
+                    <td><input type="text" placeholder="username" id="name" onkeyup="uname(this)"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" placeholder="example@email.com" id="email" onkeyup="email(this)"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="text" placeholder="password" id="password" onkeyup="pass(this)"></td>
+                </tr>
+                <tr>
+                    <td><label for="credit">Credit Card Number</label></td>
+                    <td><input type="text" placeholder="****-****-****-****" id="credit" onkeyup="credit(this)"></td>
+                </tr>
+                
+                <tr>                    
+                    <td>
+                        <div id="msg">
+                
+                        </div>
+                    </td>
+                </tr>
+            </table>           
+        </div>
+    </div>
+    
+    
+
+    <script src="./javascript/validation.js"></script>
+</body>
+</html>
