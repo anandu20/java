@@ -9,7 +9,7 @@ async function fetchProducts(){
             <img src="${product.thumbnail}" alt="">
             <h3>${product.title.substring(0,15)}</h3>
             <p>${product.price}</p>
-        <a href="./product.html"><button>more details</button></a>
+        <a href="./product.html?id=${product.id}"><button>more details</button></a>
         </div>`
         })
         document.getElementById("products").innerHTML=str;
@@ -33,14 +33,15 @@ fetchProducts();
         <img src="${product.thumbnail}" alt="">
         <h3>${product.title.substring(0,15)}</h3>
         <p>${product.price}</p>
-        <a href="./product.html"><button>more details</button></a>
+           <a href="./product.html?id=${product.id}"><button >More details</button></a>
+
             </div>`
 
 })
 document.getElementById("products").innerHTML=str;
     
     } catch (error) {
-        console.log(error);
+        console.log(error);     
         
         
     }

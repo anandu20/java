@@ -58,7 +58,7 @@ h1{
 
 .main{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
 
 }
@@ -69,13 +69,14 @@ h1{
     padding: 0px;
 }
 .left img{
-    width: 80%;
-    height:80%;
+    width: 85%;
+    height:85%;
 }
 .right{
     padding:15px ;
     width: 60%;
-    background-color: rgb(224, 231, 229);
+    background-color: rgb(231, 230, 224);
+    line-height: 30px;
  
 }
 
@@ -84,7 +85,7 @@ h1{
     width: 40%;
     height: 60px;
     margin: 4%;
-    background-color: black;
+    background-color: rgba(228, 173, 20, 0.937);
     color: white;
     border: none;
     font-size: 15px;
@@ -93,12 +94,60 @@ h1{
 }
 .rev{
     display: flex;
-    justify-content: center;
+    font-size: 15px;
+    margin-top: 40px;
+
+
+
 }
+.review{
+    width: 60%;
+    line-height: 60px;
+    justify-content: space-between;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(99, 102, 104, 0.612), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     padding: 5px;
+    margin-right: 15px;
+
+
+}
+
 
 .pr{
     color: green;
+    text-align: left;
 }
+
+
 .ra{
     color: red;
+}#pol{
+    margin-top: 40px;
+}
+
+#revv{
+    margin-top: 25px;
+}
+
+.r{
+    color: rgb(232, 240, 232);
+    background-color: green;
+    
+}
+
+.cat{
+    background-color: blue;
+    color: azure;
+}
+
+.c{
+    background-color: rgb(9, 100, 227);
+    color: white;
+}
+
+#h2a{
+    color: rgb(12, 1, 1);
+    font-weight: bolder;
+    font-size: 25px;
+
 }
