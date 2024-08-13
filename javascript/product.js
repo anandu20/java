@@ -1,4 +1,4 @@
-let product     
+ let product     
 async function fetchProducts(){
     try {
         const urlParams=new URLSearchParams(window.location.search)
@@ -8,8 +8,14 @@ async function fetchProducts(){
         product=await res.json();  // res.jason is  used to convert  'https://dummyjson.com/products') content to json
         console.log(product);
         
-        
-            
+        console.log(product.images);
+        document.getElementById("img").src=`${product.thumbnail}`
+        str1=``;
+        product.images.map((i)=>{
+            str1+=`<img  onmouseover ="changeImage('${i}')" src="${i}" alt="">`
+        })
+
+       
         document.getElementById("img").src=`${product.thumbnail}`;
         document.getElementById("h2a").innerHTML=`${product.title}`;
         document.getElementById("des").innerHTML=`${product.description}`
@@ -24,6 +30,8 @@ async function fetchProducts(){
         product.reviews.map((p)=>{
             str+=`<div class="review" >
             <p><b>Name:</b>${p.reviewerName}</p>
+            <p><b>Email:</b>${p.reviewerEmail}</p>
+            <p> <b>Date:</b>${p.date}</p> 
             <p><b>Comment:</b>${p.comment}</p>
                    
                    
@@ -34,9 +42,10 @@ async function fetchProducts(){
         document.getElementById("pol").innerHTML=` <p><b>Return Policy:</b>${product.returnPolicy}</p>
                                                   <p><b>Minimum Order Quantity:</b>${product.minimumOrderQuantity}</p>`
 
-        document.getElementById("review").innerHTML=str;                                       
+        document.getElementById("review").innerHTML=str;        
+         document.getElementById("left1") .innerHTML=str1;                               
 
-        // document.getElementById("qr").src=`${product.meta.qrCode}` <p> <b>Date:</b>${p.date}</p>  <p><b>Email:</b>${p.reviewerEmail}</p>
+        // document.getElementById("qr").src=`${product.meta.qrCode}` 
                  
     }
     
@@ -52,4 +61,7 @@ function addToCart(){
     window.location.href='./cart.html'
     
 
+}
+function changeImage(img) {
+    document.getElementById("img").src=img;
 }

@@ -67,16 +67,36 @@ h1{
     width: 40%;
     background-color: rgb(247, 244, 240);
     padding: 0px;
+    display: flex;
+    overflow-y:hidden;
+
+}
+
+.left1{
+    border: 1px solid rgb(5, 0, 0);
+    width: 20%;
+    height: 56vh;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.left2{
+    width: 80%;
+
 }
 .left img{
     width: 85%;
-    height:85%;
+    height:70%;
+    padding-bottom: 25%;
+
+
 }
 .right{
     padding:15px ;
     width: 60%;
+    overflow-y: scroll;
+    scrollbar-width: none;
     background-color: rgb(231, 230, 224);
-    line-height: 30px;
+    line-height: 40px;
  
 }
 
@@ -104,10 +124,11 @@ h1{
     width: 60%;
     line-height: 60px;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid rgb(247, 245, 245);
     box-shadow: 0 4px 8px 0 rgba(99, 102, 104, 0.612), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      padding: 5px;
     margin-right: 15px;
+    border-radius: 15px;
 
 
 }
@@ -150,4 +171,8 @@ h1{
     font-weight: bolder;
     font-size: 25px;
 
+}
+.left1 img{
+    width: 150px;
+    height: 130px;
 }

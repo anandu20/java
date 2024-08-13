@@ -18,7 +18,7 @@ function getCart(){
 
          </div>
 
-            <h2>${value.title}</h2>
+            <h2>${value.title.substring(0,15)}</h2>
 
             <div class="btrn1">
 
