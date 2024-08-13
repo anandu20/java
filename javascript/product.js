@@ -21,7 +21,7 @@ async function fetchProducts(){
         document.getElementById("des").innerHTML=`${product.description}`
         document.getElementById("pr").innerHTML=`<span class="p"></span><span class="pr">${product.price} $</span>`
         document.getElementById("rt").innerHTML=`<span class="r">Rating: </span><span class="ra">   ${product.rating}  </span>`
-        document.getElementById("cat").innerHTML=` <span class="c">Category </span><span class="ca">   ${product.category}  </span>`
+        document.getElementById("cat").innerHTML=` <span class="c">Category </span><span class="ca">   : ${product.category}  </span>`
         document.getElementById("divk").innerHTML=`<h4><b>Brand: </b>${product.brand}</h4>
                                                     <h4><b>sku: </b>${product.sku}</4>
                                                     <h3><b>Warranty Information: </b>${product.warrantyInformation}</h3>

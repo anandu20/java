@@ -6,10 +6,10 @@ async function fetchProducts(){
         str=``
         products.products.map((product)=>{
             str+=`<div class="card">
-            <img src="${product.thumbnail}" alt="">
-            <h3>${product.title.substring(0,15)}</h3>
+           <a href="./product.html?id=${product.id}"> <img src="${product.thumbnail}"alt=""></a>
+            <h3>${product.title.substring(0,15)}</h3></a>
             <p>${product.price}</p>
-        <a href="./product.html?id=${product.id}"><button>more details</button></a>
+       
         </div>`
         })
         document.getElementById("products").innerHTML=str;
@@ -30,10 +30,10 @@ fetchProducts();
     str=``
     products.products.filter((i)=>i.title.toLowerCase().includes(e.target.value.toLowerCase())).map((product)=>{
         str+=`<div class="card">
-        <img src="${product.thumbnail}" alt="">
+            <a href="./product.html?id=${product.id}"><img src="${product.thumbnail}" alt=""</a>
         <h3>${product.title.substring(0,15)}</h3>
         <p>${product.price}</p>
-           <a href="./product.html?id=${product.id}"><button >More details</button></a>
+       
 
             </div>`
 
